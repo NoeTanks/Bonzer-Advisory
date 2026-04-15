@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonzer Advisory | Fractional CFO &amp; Senior Finance Leadership</title>
+<meta name="description" content="Fractional CFO and senior finance advisory for scaling businesses with real financial complexity. CA ANZ qualified. Big Four, Fortune 1000 and AI industry experience.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--charcoal:#2C2C2A;--charcoal-light:#444441;--charcoal-mid:#5F5E5A;--green:#3B6D11;--green-light:#639922;--green-pale:#EAF3DE;--green-mid:#C0DD97;--off-white:#F8F7F4;--white:#ffffff;--border:rgba(44,44,42,0.12);--font-display:'Cormorant Garamond',serif;--font-body:'DM Sans',sans-serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--white);color:var(--charcoal);line-height:1.6;font-size:16px}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);padding:0 5%}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--charcoal);letter-spacing:0.02em;text-decoration:none}
+.logo span{color:var(--green)}
+.nav-links{display:flex;gap:32px;list-style:none;align-items:center}
+.nav-links a{font-size:14px;color:var(--charcoal-mid);text-decoration:none;font-weight:400;transition:color 0.2s}
+.nav-links a:hover{color:var(--green)}
+.nav-cta{background:var(--charcoal) !important;color:var(--white) !important;padding:8px 20px !important;border-radius:2px;font-size:13px !important;letter-spacing:0.04em}
+.nav-cta:hover{background:var(--green) !important;color:var(--white) !important}
+section{padding:100px 5%}
+.container{max-width:1100px;margin:0 auto}
+.section-tag{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:16px}
+.section-title{font-family:var(--font-display);font-size:clamp(32px,4vw,52px);font-weight:300;line-height:1.15;color:var(--charcoal);margin-bottom:20px}
+.section-title em{font-style:italic;color:var(--green)}
+.section-sub{font-size:16px;color:var(--charcoal-mid);max-width:580px;line-height:1.75;font-weight:300}
+.fade-in{opacity:0;transform:translateY(18px);transition:opacity 0.65s ease,transform 0.65s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+#hero{padding:160px 5% 100px;background:var(--off-white);min-height:92vh;display:flex;align-items:center}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 0.8fr;gap:80px;align-items:center}
+.hero-tag{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:20px}
+.hero-title{font-family:var(--font-display);font-size:clamp(44px,5.5vw,72px);font-weight:300;line-height:1.08;color:var(--charcoal);margin-bottom:28px}
+.hero-title em{font-style:italic;color:var(--green)}
+.hero-pain{display:flex;flex-direction:column;gap:10px;margin-bottom:28px}
+.hero-pain-item{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:var(--charcoal-mid);font-weight:300;line-height:1.5}
+.hero-pain-item::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%;flex-shrink:0;margin-top:8px}
+.hero-sub-detail{font-size:14px;color:var(--charcoal-mid);line-height:1.7;margin-bottom:36px;font-weight:300;max-width:520px;opacity:0.8;padding-top:16px;border-top:1px solid var(--border)}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-primary{background:var(--charcoal);color:var(--white);padding:14px 32px;border-radius:2px;text-decoration:none;font-size:14px;font-weight:500;letter-spacing:0.04em;transition:background 0.2s;display:inline-block}
+.btn-primary:hover{background:var(--green)}
+.btn-outline{border:1px solid var(--charcoal);color:var(--charcoal);padding:14px 32px;border-radius:2px;text-decoration:none;font-size:14px;font-weight:400;letter-spacing:0.04em;transition:all 0.2s;display:inline-block}
+.btn-outline:hover{border-color:var(--green);color:var(--green)}
+.hero-right{display:flex;flex-direction:column;gap:2px}
+.hero-stat{background:var(--white);border:1px solid var(--border);padding:24px 28px}
+.hero-stat-num{font-family:var(--font-display);font-size:44px;font-weight:300;color:var(--green);line-height:1;margin-bottom:6px}
+.hero-stat-label{font-size:13px;color:var(--charcoal-mid);line-height:1.5}
+.hero-credentials{margin-top:2px;background:var(--charcoal);padding:18px 28px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.cred-item{font-size:11px;letter-spacing:0.1em;color:var(--green-mid);text-transform:uppercase;font-weight:500}
+.cred-sep{color:rgba(255,255,255,0.2)}
+#credbar{padding:0;background:var(--charcoal);border-top:1px solid rgba(255,255,255,0.06)}
+.credbar-inner{max-width:1100px;margin:0 auto;padding:26px 5%;display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+.credbar-item{display:flex;flex-direction:column;gap:4px}
+.credbar-label{font-size:10px;letter-spacing:0.14em;color:rgba(255,255,255,0.3);text-transform:uppercase}
+.credbar-value{font-size:13px;color:rgba(255,255,255,0.7);font-weight:400}
+.credbar-div{width:1px;height:32px;background:rgba(255,255,255,0.08);flex-shrink:0}
+#proof{background:var(--white)}
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:56px}
+.proof-card{background:var(--off-white);border:1px solid var(--border);padding:36px 32px;border-radius:2px;border-left:3px solid var(--green)}
+.proof-outcome{font-family:var(--font-display);font-size:22px;font-weight:400;color:var(--charcoal);line-height:1.3;margin-bottom:12px}
+.proof-outcome em{font-style:italic;color:var(--green)}
+.proof-detail{font-size:13px;color:var(--charcoal-mid);line-height:1.7;font-weight:300}
+.proof-tag{display:inline-block;margin-top:16px;font-size:11px;letter-spacing:0.08em;color:var(--green);background:var(--green-pale);padding:4px 12px;border-radius:2px;font-weight:500;text-transform:uppercase}
+#process{background:var(--off-white)}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:60px;background:var(--border);border:1px solid var(--border)}
+.process-step{background:var(--white);padding:48px 36px}
+.step-num{font-family:var(--font-display);font-size:60px;font-weight:300;color:var(--green-mid);line-height:1;margin-bottom:24px}
+.step-title{font-size:15px;font-weight:500;color:var(--charcoal);margin-bottom:12px}
+.step-desc{font-size:14px;color:var(--charcoal-mid);line-height:1.75;font-weight:300}
+.step-price{display:inline-block;margin-top:20px;font-size:12px;letter-spacing:0.08em;color:var(--green);background:var(--green-pale);padding:5px 14px;border-radius:2px;font-weight:500}
+#services{background:var(--white)}
+.flagship-card{background:var(--charcoal);padding:48px;border-radius:2px;margin-top:48px;margin-bottom:24px;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.flagship-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--green-mid);margin-bottom:12px;font-weight:500}
+.flagship-name{font-family:var(--font-display);font-size:36px;font-weight:300;color:var(--white);line-height:1.2;margin-bottom:16px}
+.flagship-desc{font-size:15px;color:rgba(255,255,255,0.6);line-height:1.75;font-weight:300;margin-bottom:28px}
+.flagship-cta{display:inline-block;background:var(--green);color:var(--white);padding:12px 28px;border-radius:2px;font-size:13px;font-weight:500;letter-spacing:0.04em;text-decoration:none;transition:background 0.2s}
+.flagship-cta:hover{background:var(--green-light)}
+.flagship-list{list-style:none}
+.flagship-list li{font-size:14px;color:rgba(255,255,255,0.65);padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:flex;gap:12px;align-items:flex-start;font-weight:300;line-height:1.5}
+.flagship-list li:last-child{border-bottom:none}
+.flagship-list li::before{content:'';width:5px;height:5px;background:var(--green-mid);border-radius:50%;flex-shrink:0;margin-top:7px}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:var(--off-white);border:1px solid var(--border);padding:36px 28px;border-radius:2px;transition:border-color 0.25s}
+.service-card:hover{border-color:var(--green)}
+.service-icon{width:36px;height:3px;background:var(--green);margin-bottom:24px}
+.service-name{font-size:16px;font-weight:500;color:var(--charcoal);margin-bottom:10px}
+.service-desc{font-size:13px;color:var(--charcoal-mid);line-height:1.75;font-weight:300;margin-bottom:20px}
+.service-list{list-style:none}
+.service-list li{font-size:13px;color:var(--charcoal-mid);padding:6px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:10px;font-weight:300}
+.service-list li:last-child{border-bottom:none}
+.service-list li::before{content:'';width:5px;height:5px;background:var(--green);border-radius:50%;flex-shrink:0;margin-top:6px}
+#who{background:var(--off-white)}
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.who-card{border:1px solid var(--border);padding:32px 28px;border-radius:2px;background:var(--white)}
+.who-card-title{font-size:15px;font-weight:500;color:var(--charcoal);margin-bottom:10px}
+.who-card-desc{font-size:14px;color:var(--charcoal-mid);line-height:1.7;font-weight:300}
+.who-note{margin-top:32px;padding:24px 32px;background:var(--white);border:1px solid var(--border);border-left:3px solid var(--green)}
+.who-note p{font-size:14px;color:var(--charcoal-mid);line-height:1.75;font-weight:300}
+#about{background:var(--white)}
+.about-inner{display:grid;grid-template-columns:1fr 1.7fr;gap:80px;align-items:start}
+.about-photo{width:100%;aspect-ratio:3/4;background:var(--charcoal);border:1px solid var(--charcoal-light);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
+.about-initials{font-family:var(--font-display);font-size:80px;font-weight:300;color:var(--green);opacity:0.4}
+.about-name{font-family:var(--font-display);font-size:26px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
+.about-title-label{font-size:11px;color:var(--green);letter-spacing:0.08em;font-weight:500;text-transform:uppercase}
+.about-creds{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.cred-badge{font-size:11px;background:var(--green-pale);color:var(--green);padding:4px 12px;border-radius:2px;letter-spacing:0.06em;font-weight:500}
+.about-video{background:var(--charcoal);border-radius:2px;padding:32px;text-align:center;margin-top:20px;cursor:pointer}
+.play-btn{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.play-btn::after{content:'';border-left:17px solid white;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
+.about-video p{color:rgba(255,255,255,0.35);font-size:11px;margin-bottom:6px;letter-spacing:0.08em;text-transform:uppercase}
+.about-video h4{color:var(--white);font-size:14px;font-weight:400}
+.about-right p{font-size:15px;color:var(--charcoal-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
+.about-right strong{color:var(--charcoal);font-weight:500}
+.why-hire{margin-top:36px;border:1px solid var(--border);border-radius:2px;overflow:hidden}
+.why-hire-header{background:var(--off-white);padding:16px 24px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--charcoal-mid);font-weight:500}
+.why-hire-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border)}
+.why-item{background:var(--white);padding:18px 24px}
+.why-item-title{font-size:13px;font-weight:500;color:var(--charcoal);margin-bottom:4px}
+.why-item-desc{font-size:12px;color:var(--charcoal-mid);font-weight:300;line-height:1.6}
+.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);margin-top:32px;border:1px solid var(--border)}
+.exp-item{background:var(--white);padding:18px 22px}
+.exp-company{font-size:13px;font-weight:500;color:var(--charcoal);margin-bottom:3px}
+.exp-role{font-size:12px;color:var(--charcoal-mid);font-weight:300}
+.exp-tag{font-size:10px;letter-spacing:0.08em;color:var(--green);text-transform:uppercase;margin-top:5px}
+#pricing{background:var(--off-white)}
+.pricing-fix{margin:48px 0 32px;background:var(--white);border:1px solid var(--border);border-left:3px solid var(--green);padding:28px 32px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.pricing-fix-info h4{font-size:16px;font-weight:500;color:var(--charcoal);margin-bottom:8px}
+.pricing-fix-info p{font-size:14px;color:var(--charcoal-mid);font-weight:300;line-height:1.65;max-width:520px}
+.pricing-fix-price{text-align:right;flex-shrink:0}
+.pricing-fix-price span{font-family:var(--font-display);font-size:34px;font-weight:300;color:var(--green);display:block}
+.pricing-fix-price small{font-size:12px;color:var(--charcoal-mid)}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pricing-card{background:var(--white);border:1px solid var(--border);padding:40px 32px;border-radius:2px}
+.pricing-card.featured{background:var(--charcoal);border-color:var(--charcoal)}
+.pricing-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px;font-weight:500;display:block}
+.pricing-card.featured .pricing-label{color:var(--green-mid)}
+.pricing-name{font-family:var(--font-display);font-size:30px;font-weight:300;color:var(--charcoal);margin-bottom:20px}
+.pricing-card.featured .pricing-name{color:var(--white)}
+.pricing-price{font-family:var(--font-display);font-size:46px;font-weight:300;color:var(--charcoal);line-height:1;margin-bottom:4px}
+.pricing-card.featured .pricing-price{color:var(--white)}
+.pricing-period{font-size:12px;color:var(--charcoal-mid);margin-bottom:32px}
+.pricing-card.featured .pricing-period{color:rgba(255,255,255,0.4)}
+.pricing-features{list-style:none;margin-bottom:36px}
+.pricing-features li{font-size:13px;color:var(--charcoal-mid);padding:10px 0;border-bottom:1px solid var(--border);display:flex;gap:10px;align-items:flex-start;font-weight:300;line-height:1.5}
+.pricing-card.featured .pricing-features li{color:rgba(255,255,255,0.65);border-color:rgba(255,255,255,0.08)}
+.pricing-features li::before{content:'';width:5px;height:5px;background:var(--green);border-radius:50%;flex-shrink:0;margin-top:6px}
+.pricing-card.featured .pricing-features li::before{background:var(--green-mid)}
+.btn-pricing{display:block;text-align:center;padding:13px;border-radius:2px;font-size:13px;font-weight:500;letter-spacing:0.04em;text-decoration:none;transition:all 0.2s;border:1px solid var(--charcoal);color:var(--charcoal)}
+.btn-pricing:hover{background:var(--charcoal);color:var(--white)}
+.btn-pricing-inv{background:var(--green);border-color:var(--green);color:var(--white)}
+.btn-pricing-inv:hover{background:var(--green-light) !important;border-color:var(--green-light) !important;color:var(--white) !important}
+#faq{background:var(--white)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border:1px solid var(--border);margin-top:56px}
+.faq-item{background:var(--white);padding:32px 36px}
+.faq-q{font-size:15px;font-weight:500;color:var(--charcoal);margin-bottom:10px}
+.faq-a{font-size:14px;color:var(--charcoal-mid);line-height:1.75;font-weight:300}
+#contact{background:var(--charcoal)}
+#contact .section-tag{color:var(--green-mid)}
+#contact .section-title{color:var(--white)}
+#contact .section-sub{color:rgba(255,255,255,0.45)}
+.contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.contact-form{display:flex;flex-direction:column;gap:16px;margin-top:40px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group{display:flex;flex-direction:column;gap:6px}
+.form-group label{font-size:11px;letter-spacing:0.1em;color:rgba(255,255,255,0.35);text-transform:uppercase}
+.form-group input,.form-group select,.form-group textarea{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:var(--white);padding:12px 16px;font-size:14px;font-family:var(--font-body);border-radius:2px;outline:none;transition:border-color 0.2s}
+.form-group input::placeholder{color:rgba(255,255,255,0.22)}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--green)}
+.form-group select option{background:var(--charcoal)}
+.form-group textarea{resize:vertical;min-height:100px}
+.form-confidential{font-size:12px;color:rgba(255,255,255,0.3);line-height:1.6;padding:12px 16px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:2px}
+.form-confidential strong{color:rgba(255,255,255,0.5);font-weight:500}
+.btn-submit{background:var(--green);color:var(--white);border:none;padding:15px 32px;font-size:14px;font-weight:500;letter-spacing:0.06em;border-radius:2px;cursor:pointer;transition:background 0.2s;font-family:var(--font-body)}
+.btn-submit:hover{background:var(--green-light)}
+.contact-info{padding-top:40px}
+.contact-detail{margin-bottom:24px}
+.contact-detail label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--green-mid);margin-bottom:8px;display:block}
+.contact-detail p{font-size:15px;color:rgba(255,255,255,0.72);font-weight:300}
+.contact-detail a{color:var(--green-mid);text-decoration:none}
+.contact-detail a:hover{text-decoration:underline}
+.contact-ideal{margin-top:28px;padding:20px 24px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:2px}
+.contact-ideal p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.7;font-weight:300;margin-bottom:10px}
+.contact-ideal p:last-child{margin-bottom:0}
+.contact-ideal strong{color:rgba(255,255,255,0.6);font-weight:500}
+.contact-promise{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-left:3px solid var(--green);padding:20px 24px;margin-top:24px}
+.contact-promise p{font-size:13px;color:rgba(255,255,255,0.45);line-height:1.75;font-weight:300;font-style:italic}
+footer{background:#181816;padding:32px 5%}
+.footer-inner{max-width:1100px;margin:0 auto}
+.footer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}
+.footer-logo{font-family:var(--font-display);font-size:18px;color:rgba(255,255,255,0.28)}
+.footer-logo span{color:var(--green)}
+.footer-links{display:flex;gap:24px}
+.footer-links a{font-size:12px;color:rgba(255,255,255,0.26);text-decoration:none;transition:color 0.2s}
+.footer-links a:hover{color:var(--green-mid)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-copy{font-size:12px;color:rgba(255,255,255,0.16)}
+.footer-legal{display:flex;gap:20px}
+.footer-legal a{font-size:11px;color:rgba(255,255,255,0.35);text-decoration:none;transition:color 0.2s}
+.footer-legal a:hover{color:var(--green-mid)}
+.chat-bubble{position:fixed;bottom:32px;right:32px;z-index:200}
+.chat-btn{width:56px;height:56px;background:var(--green);border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(59,109,17,0.45);transition:transform 0.2s}
+.chat-btn:hover{transform:scale(1.06)}
+.chat-btn svg{width:24px;height:24px;fill:white}
+.chat-window{position:absolute;bottom:70px;right:0;width:360px;background:var(--white);border:1px solid var(--border);border-radius:4px;box-shadow:0 12px 48px rgba(0,0,0,0.14);display:none;flex-direction:column;overflow:hidden}
+.chat-window.open{display:flex}
+.chat-header{background:var(--charcoal);padding:16px 20px;display:flex;align-items:center;gap:12px}
+.chat-avatar{width:38px;height:38px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:17px;color:white}
+.chat-header-info h4{color:white;font-size:14px;font-weight:500}
+.chat-header-info p{color:rgba(255,255,255,0.38);font-size:12px}
+.chat-messages{padding:20px;display:flex;flex-direction:column;gap:12px;height:300px;overflow-y:auto;background:var(--off-white)}
+.chat-msg{max-width:88%}
+.chat-msg.bot{align-self:flex-start}
+.chat-msg.user{align-self:flex-end}
+.chat-bubble-msg{padding:10px 14px;border-radius:2px;font-size:13px;line-height:1.55}
+.chat-msg.bot .chat-bubble-msg{background:var(--white);color:var(--charcoal);border:1px solid var(--border)}
+.chat-msg.user .chat-bubble-msg{background:var(--green);color:white}
+.chat-typing .chat-bubble-msg{background:var(--white);border:1px solid var(--border);color:var(--charcoal-mid);font-style:italic}
+.chat-suggestions{padding:12px 14px;display:flex;flex-wrap:wrap;gap:8px;background:var(--white);border-top:1px solid var(--border)}
+.chat-suggestion{font-size:12px;color:var(--green);border:1px solid var(--green-mid);background:var(--green-pale);padding:6px 12px;border-radius:2px;cursor:pointer;transition:all 0.2s;font-family:var(--font-body)}
+.chat-suggestion:hover{background:var(--green);color:white;border-color:var(--green)}
+.chat-input-row{display:flex;border-top:1px solid var(--border)}
+.chat-input{flex:1;border:none;padding:12px 16px;font-size:13px;font-family:var(--font-body);outline:none;color:var(--charcoal)}
+.chat-send{background:var(--green);border:none;padding:12px 18px;cursor:pointer;color:white;font-family:var(--font-body);font-size:13px;font-weight:500;transition:background 0.2s}
+.chat-send:hover{background:var(--green-light)}
+.chat-send:disabled{opacity:0.5;cursor:not-allowed}
+@media(max-width:768px){
+.hero-inner,.about-inner,.contact-inner{grid-template-columns:1fr;gap:40px}
+.process-grid,.services-grid,.pricing-grid,.who-grid,.experience-grid,.proof-grid,.faq-grid,.why-hire-grid{grid-template-columns:1fr}
+.flagship-card{grid-template-columns:1fr;gap:32px}
+.form-row{grid-template-columns:1fr}
+.nav-links{display:none}
+.footer-top,.footer-bottom{flex-direction:column;gap:16px;text-align:center}
+.credbar-inner{gap:24px}
+.credbar-div{display:none}
+.pricing-fix{flex-direction:column}
+.pricing-fix-price{text-align:left}
+.chat-window{width:320px}
+}
+</style>
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Bonzer<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact" class="nav-cta">Book a call</a></li>
+    </ul>
+  </div>
+</nav>
+<section id="hero">
+  <div class="hero-inner">
+    <div class="fade-in">
+      <p class="hero-tag">Fractional CFO &middot; CA ANZ &middot; Big Four &middot; Fortune 1000 &middot; AI Industry</p>
+      <h1 class="hero-title">The finance<br>operator your<br>business <em>needs now.</em></h1>
+      <div class="hero-pain">
+        <div class="hero-pain-item">Your month-end takes too long and the numbers still are not reliable</div>
+        <div class="hero-pain-item">You are heading into a raise, an audit, or a board meeting and the finance function is not ready</div>
+        <div class="hero-pain-item">You need someone senior in your corner but a full-time CFO hire is not the right move yet</div>
+        <div class="hero-pain-item">Cash flow is tight and you do not have real visibility into why</div>
+      </div>
+      <p class="hero-sub-detail">Bonzer Advisory provides fractional CFO leadership and senior finance support to scaling businesses with real financial complexity. You work directly with a CA ANZ with Big Four foundations and hands-on experience inside some of the world's most demanding financial environments &mdash; including two of the leading AI companies in the world.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Book a free consultation</a>
+        <a href="#services" class="btn-outline">See how it works</a>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="hero-stat" style="border-left:3px solid var(--green)">
+        <div class="hero-stat-num">10+</div>
+        <div class="hero-stat-label">Years across Big Four audit, Fortune 1000 controllership, and AI industry finance leadership</div>
+      </div>
+      <div class="hero-stat" style="margin-top:2px">
+        <div class="hero-stat-num">$0</div>
+        <div class="hero-stat-label">Cost of the discovery consultation &mdash; an honest conversation about your situation before any commercial commitment</div>
+      </div>
+      <div class="hero-stat" style="margin-top:2px">
+        <div class="hero-stat-num">30</div>
+        <div class="hero-stat-label">Days to a defined, documented outcome &mdash; or an ongoing retainer that keeps everything sharp</div>
+      </div>
+      <div class="hero-credentials">
+        <span class="cred-item">CA ANZ</span><span class="cred-sep"> &middot; </span>
+        <span class="cred-item">Big Four Alumni</span><span class="cred-sep"> &middot; </span>
+        <span class="cred-item">IFRS &amp; US GAAP</span><span class="cred-sep"> &middot; </span>
+        <span class="cred-item">Global</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="credbar">
+  <div class="credbar-inner">
+    <div class="credbar-item"><span class="credbar-label">Background</span><span class="credbar-value">Big Four &middot; Major Banking &middot; Fortune 1000 &middot; AI Industry</span></div>
+    <div class="credbar-div"></div>
+    <div class="credbar-item"><span class="credbar-label">Frameworks</span><span class="credbar-value">IFRS &middot; US GAAP &middot; AASB &middot; UK GAAP &middot; SOX &middot; ICFR</span></div>
+    <div class="credbar-div"></div>
+    <div class="credbar-item"><span class="credbar-label">Sectors</span><span class="credbar-value">AI &amp; Technology &middot; Financial Services &middot; Energy &middot; Mining &middot; Retail &middot; Media</span></div>
+    <div class="credbar-div"></div>
+    <div class="credbar-item"><span class="credbar-label">Geographies</span><span class="credbar-value">APAC &middot; EMEA &middot; Americas</span></div>
+  </div>
+</div>
+<section id="proof">
+  <div class="container">
+    <p class="section-tag fade-in">Track record</p>
+    <h2 class="section-title fade-in">Outcomes delivered in <em>the field</em></h2>
+    <p class="section-sub fade-in">The following represent real engagements. Client and employer names are withheld by professional convention.</p>
+    <div class="proof-grid">
+      <div class="proof-card fade-in">
+        <div class="proof-outcome">Accounting infrastructure built for a <em>major AI infrastructure company</em> during one of the fastest hardware scale-ups in the industry</div>
+        <div class="proof-detail">Led fixed asset accounting and controls design through hypergrowth, establishing the governance framework, policy documentation, and reporting architecture required to withstand Big Four audit scrutiny. Delivered on a compressed timeline alongside aggressive operational expansion.</div>
+        <span class="proof-tag">AI Sector &middot; Controls &middot; Reporting Architecture</span>
+      </div>
+      <div class="proof-card fade-in">
+        <div class="proof-outcome">Technical accounting and M&amp;A support at a <em>leading global AI research organisation</em> during a period of transformational growth</div>
+        <div class="proof-detail">Provided senior technical accounting analysis under US GAAP including functional currency frameworks, equity method accounting, business combinations, and entity restructuring support across a rapidly evolving corporate structure.</div>
+        <span class="proof-tag">Technical Accounting &middot; M&amp;A &middot; AI Sector</span>
+      </div>
+      <div class="proof-card fade-in">
+        <div class="proof-outcome">Month-end close accelerated and multi-jurisdictional reporting overhauled for a <em>major global financial data and media group</em></div>
+        <div class="proof-detail">Managed monthly close, financial controls, and statutory reporting across multiple jurisdictions and entity types. Automated key reporting workflows reducing manual effort and close timelines by 30%, while leading cross-functional teams across Americas, EMEA, and Asia-Pacific subsidiaries.</div>
+        <span class="proof-tag">Financial Reporting &middot; Close Transformation &middot; Multi-Jurisdictional</span>
+      </div>
+      <div class="proof-card fade-in">
+        <div class="proof-outcome">Fund-wide covenant monitoring and reporting built across <em>20+ portfolio companies</em> for a US private equity manager</div>
+        <div class="proof-detail">Designed and implemented a centralised tracking system for subscription credit facilities, standardised lender and investor reporting, and built forecasting tools to monitor leverage exposure and covenant compliance across the portfolio.</div>
+        <span class="proof-tag">Private Equity &middot; Portfolio Monitoring &middot; Lender Compliance</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="process">
+  <div class="container">
+    <p class="section-tag fade-in">Engagement model</p>
+    <h2 class="section-title fade-in">A structured path to <em>financial clarity</em></h2>
+    <p class="section-sub fade-in">No open-ended retainers before demonstrating value. No ambiguous scope. You know precisely what you are receiving, what it costs, and when it will be done.</p>
+    <div class="process-grid">
+      <div class="process-step fade-in">
+        <div class="step-num">01</div>
+        <div class="step-title">Discovery consultation</div>
+        <div class="step-desc">A complimentary 30&ndash;60 minute conversation to understand your business, your finance function, and the specific challenge you are facing. This is a diagnostic exercise, not a sales call. You will leave with a clearer picture of your situation regardless of whether we proceed together.</div>
+        <span class="step-price">Complimentary &middot; 30&ndash;60 minutes</span>
+      </div>
+      <div class="process-step fade-in">
+        <div class="step-num">02</div>
+        <div class="step-title">The 30-day engagement</div>
+        <div class="step-desc">A focused, time-bound engagement to resolve one defined problem. Reporting overhaul, controls gap, technical accounting question, finance function build &mdash; a clear, documented outcome delivered within 30 days. Fee and scope agreed in writing before any work begins. No hourly billing.</div>
+        <span class="step-price">From USD $5,000 &middot; no hourly billing</span>
+      </div>
+      <div class="process-step fade-in">
+        <div class="step-num">03</div>
+        <div class="step-title">Ongoing retainer</div>
+        <div class="step-desc">After the initial engagement, clients may elect to retain ongoing fractional CFO support. Continuous access to senior financial expertise &mdash; reporting oversight, strategic input, and ad hoc advice &mdash; on a predictable monthly basis. Minimum three-month commitment.</div>
+        <span class="step-price">From USD $2,000 per month</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="container">
+    <p class="section-tag fade-in">Services</p>
+    <h2 class="section-title fade-in">Fractional CFO leadership &mdash; <em>and the depth behind it</em></h2>
+    <p class="section-sub fade-in">The flagship service is fractional CFO. Everything else is the depth that makes it exceptional.</p>
+    <div class="flagship-card fade-in">
+      <div>
+        <div class="flagship-label">Flagship service</div>
+        <div class="flagship-name">Fractional CFO &amp; Financial Leadership</div>
+        <div class="flagship-desc">For businesses that need a senior finance operator in their corner &mdash; attending leadership meetings, owning the numbers, driving decisions &mdash; without the cost or commitment of a full-time hire. Direct, hands-on financial leadership from a CA ANZ with Big Four and Fortune 1000 experience.</div>
+        <a href="#contact" class="flagship-cta">Book a consultation</a>
+      </div>
+      <ul class="flagship-list">
+        <li>Board and investor reporting design, preparation, and delivery</li>
+        <li>Cash flow forecasting, working capital management, and treasury oversight</li>
+        <li>KPI framework development and financial performance monitoring</li>
+        <li>Lender covenant monitoring, compliance reporting, and relationship support</li>
+        <li>Finance function build, restructure, and team capability development</li>
+        <li>Strategic financial planning, scenario modelling, and capital allocation</li>
+        <li>Audit, investor, and lender liaison on your behalf</li>
+      </ul>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-in">
+        <div class="service-icon"></div>
+        <div class="service-name">Financial Reporting &amp; Close</div>
+        <div class="service-desc">Slow, unreliable month-ends. Reports that tell you nothing useful. The process is redesigned, the data is fixed, and reporting is rebuilt so you can actually use it to run the business.</div>
+        <ul class="service-list">
+          <li>Month-end close redesign and acceleration</li>
+          <li>Management accounts and board pack build</li>
+          <li>Group consolidation frameworks</li>
+          <li>ERP and reporting system improvement</li>
+        </ul>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"></div>
+        <div class="service-name">Controls &amp; Finance Health Review</div>
+        <div class="service-desc">A structured diagnostic to identify control gaps, process risks, and reporting blind spots before they become material. Produces a prioritised remediation plan with clear next steps.</div>
+        <ul class="service-list">
+          <li>Internal control design and gap assessment</li>
+          <li>Process risk identification and remediation</li>
+          <li>Audit readiness preparation</li>
+          <li>SOX and ICFR framework implementation</li>
+        </ul>
+      </div>
+      <div class="service-card fade-in">
+        <div class="service-icon"></div>
+        <div class="service-name">Technical Accounting &amp; Transactions</div>
+        <div class="service-desc">Complex transactions, new standards, or audit-sensitive areas requiring a qualified technical view. Accounting memos, position papers, and workpapers prepared to institutional standard.</div>
+        <ul class="service-list">
+          <li>Revenue recognition and lease accounting</li>
+          <li>Business combinations and M&amp;A support</li>
+          <li>Foreign currency and financial instruments</li>
+          <li>Restructuring and transaction accounting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="who">
+  <div class="container">
+    <p class="section-tag fade-in">Who this is for</p>
+    <h2 class="section-title fade-in">Built for businesses that have <em>outgrown the basics</em></h2>
+    <p class="section-sub fade-in">Bonzer Advisory is selective. The best fit is where financial complexity has outpaced the current finance function and leadership recognises it.</p>
+    <div class="who-grid">
+      <div class="who-card fade-in">
+        <div class="who-card-title">Growth-stage businesses</div>
+        <div class="who-card-desc">Companies scaling past their bookkeeper or part-time accountant but not yet at the scale for a full-time CFO. Typically 10&ndash;200 employees, increasing reporting complexity, or an imminent milestone requiring senior finance input.</div>
+      </div>
+      <div class="who-card fade-in">
+        <div class="who-card-title">PE-backed and investor-ready companies</div>
+        <div class="who-card-desc">Businesses preparing for a raise, reporting to institutional investors, or navigating a private equity transaction that requires institutional-grade financial reporting, controls, and covenant compliance infrastructure.</div>
+      </div>
+      <div class="who-card fade-in">
+        <div class="who-card-title">Businesses at an inflection point</div>
+        <div class="who-card-desc">Companies navigating a system migration, first-time audit, complex transaction, or period of rapid change that has exposed gaps in the finance function requiring expert, time-bound remediation.</div>
+      </div>
+    </div>
+    <div class="who-note fade-in">
+      <p>Bonzer Advisory accepts clients from North America, Australia, the United Kingdom, and internationally. All engagements are delivered remotely as standard. On-site availability can be arranged. If you are unsure whether your situation is the right fit, the discovery consultation will tell you &mdash; at no cost and no obligation.</p>
+    </div>
+  </div>
+</section>
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="fade-in">
+        <div class="about-photo"><div class="about-initials">SB</div></div>
+        <div class="about-name">Sean B.</div>
+        <div class="about-title-label">Founder &middot; Bonzer Advisory</div>
+        <div class="about-creds">
+          <span class="cred-badge">CA ANZ</span>
+          <span class="cred-badge">IFRS &amp; US GAAP</span>
+          <span class="cred-badge">Big Four Alumni</span>
+        </div>
+        <div class="about-video">
+          <div class="play-btn"></div>
+          <p>Intro video</p>
+          <h4>What Bonzer Advisory does and who it is for</h4>
+        </div>
+      </div>
+      <div class="fade-in">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">A <em>senior finance executive</em> &mdash; directly engaged.</h2>
+        <p>Bonzer Advisory was founded on a straightforward premise: growing businesses deserve access to the same calibre of financial expertise as the large corporates they compete with &mdash; without a full-time executive overhead.</p>
+        <p>The practice is led by a <strong>senior finance executive and Chartered Accountant (CA ANZ)</strong> with Big Four foundations and over a decade of progressive leadership across major financial institutions, Fortune 1000 environments, and &mdash; most recently &mdash; two of the world's most prominent AI companies during their most critical growth phases. Experience spans <strong>IFRS, US GAAP, AASB, and UK GAAP</strong> across APAC, EMEA, and the Americas.</p>
+        <p>Prior engagements include senior finance leadership at a <strong>leading AI research organisation</strong> and a <strong>major AI infrastructure company</strong>; finance transformation and close optimisation at a <strong>major global financial data and media group</strong>; and portfolio-wide financial monitoring for a <strong>US private equity manager</strong> across 20+ companies. Earlier career experience spans Big Four audit across Sydney and London for ASX and FTSE-listed clients, and group reporting at a major Australian bank.</p>
+        <div class="why-hire">
+          <div class="why-hire-header">Why clients work with Bonzer Advisory</div>
+          <div class="why-hire-grid">
+            <div class="why-item">
+              <div class="why-item-title">Direct engagement</div>
+              <div class="why-item-desc">Every engagement is handled personally. No juniors, no account managers, no diluted delivery.</div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-title">Decision-useful reporting</div>
+              <div class="why-item-desc">Not just cleaner numbers &mdash; reporting built to drive decisions at board and leadership level.</div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-title">Technical depth</div>
+              <div class="why-item-desc">Institutional-grade technical accounting across IFRS, US GAAP, and complex transactions.</div>
+            </div>
+            <div class="why-item">
+              <div class="why-item-title">Stakeholder fluency</div>
+              <div class="why-item-desc">Experienced working directly with CEOs, investors, auditors, lenders, and boards.</div>
+            </div>
+          </div>
+        </div>
+        <div class="experience-grid">
+          <div class="exp-item">
+            <div class="exp-company">Leading AI Research Company</div>
+            <div class="exp-role">Senior Manager &middot; Technical Accounting &amp; M&amp;A</div>
+            <div class="exp-tag">US GAAP &middot; High-growth &middot; Current</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-company">Major AI Infrastructure Company</div>
+            <div class="exp-role">Senior Manager &middot; Fixed Assets &amp; Controls</div>
+            <div class="exp-tag">Hypergrowth &middot; 2025</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-company">Big Four Audit &amp; Advisory</div>
+            <div class="exp-role">Manager &middot; Sydney &amp; London</div>
+            <div class="exp-tag">ASX &amp; FTSE-listed &middot; 2017&ndash;2022</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-company">Global Financial Data &amp; Media Group</div>
+            <div class="exp-role">Finance &amp; Project Manager</div>
+            <div class="exp-tag">Multi-jurisdictional &middot; Americas, EMEA, APAC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="pricing">
+  <div class="container">
+    <p class="section-tag fade-in">Pricing</p>
+    <h2 class="section-title fade-in">Transparent structure, <em>no ambiguity</em></h2>
+    <p class="section-sub fade-in">Retainer pricing is set and disclosed upfront. The initial fix engagement is scoped individually &mdash; a written proposal with the agreed fee is provided before any work begins.</p>
+    <div class="pricing-fix fade-in">
+      <div class="pricing-fix-info">
+        <h4>The 30-day fix engagement</h4>
+        <p>A time-bound engagement to resolve your most pressing financial challenge. Scope and fee are agreed in writing following the discovery consultation. No hourly billing, no scope creep, no surprises.</p>
+      </div>
+      <div class="pricing-fix-price">
+        <span>From $5,000</span>
+        <small>USD &middot; fee agreed in writing &middot; scope dependent</small>
+      </div>
+    </div>
+    <div class="pricing-grid">
+      <div class="pricing-card fade-in">
+        <span class="pricing-label">Monthly retainer</span>
+        <div class="pricing-name">Essentials</div>
+        <div class="pricing-price">$2,000</div>
+        <div class="pricing-period">USD per month &middot; minimum 3 months</div>
+        <ul class="pricing-features">
+          <li>4&ndash;6 hours of advisory time per month</li>
+          <li>Email and asynchronous support</li>
+          <li>Monthly financial review call</li>
+          <li>Reporting oversight and commentary</li>
+        </ul>
+        <a href="#contact" class="btn-pricing">Enquire</a>
+      </div>
+      <div class="pricing-card featured fade-in">
+        <span class="pricing-label">Most selected</span>
+        <div class="pricing-name">Standard</div>
+        <div class="pricing-price">$3,500</div>
+        <div class="pricing-period">USD per month &middot; minimum 3 months</div>
+        <ul class="pricing-features">
+          <li>8&ndash;12 hours of advisory time per month</li>
+          <li>Priority response and availability</li>
+          <li>Reporting review, commentary, and sign-off</li>
+          <li>Ad hoc technical queries included</li>
+          <li>Bi-weekly strategic review call</li>
+        </ul>
+        <a href="#contact" class="btn-pricing btn-pricing-inv">Enquire</a>
+      </div>
+      <div class="pricing-card fade-in">
+        <span class="pricing-label">Monthly retainer</span>
+        <div class="pricing-name">Premium</div>
+        <div class="pricing-price">$5,000</div>
+        <div class="pricing-period">USD per month &middot; minimum 3 months</div>
+        <ul class="pricing-features">
+          <li>15&ndash;20 hours of advisory time per month</li>
+          <li>Board pack preparation and delivery</li>
+          <li>Strategic planning and scenario modelling</li>
+          <li>Investor, lender, and auditor liaison</li>
+          <li>Weekly availability and on-call access</li>
+        </ul>
+        <a href="#contact" class="btn-pricing">Enquire</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq">
+  <div class="container">
+    <p class="section-tag fade-in">Common questions</p>
+    <h2 class="section-title fade-in">What you probably <em>want to know</em></h2>
+    <div class="faq-grid">
+      <div class="faq-item fade-in">
+        <div class="faq-q">What size business is this right for?</div>
+        <div class="faq-a">Bonzer Advisory works best with businesses between roughly 10 and 200 employees that have grown past their bookkeeper or part-time accountant but are not yet at the scale for a full-time CFO. Revenue is less important than financial complexity &mdash; if your reporting, controls, or cash flow visibility are creating risk or limiting decisions, this is likely a good fit.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">How does the first 30 days work?</div>
+        <div class="faq-a">Following the discovery consultation, a scope and fee are agreed in writing. Work begins immediately on one clearly defined problem. A documented output is delivered at the end of 30 days &mdash; whether that is a rebuilt reporting pack, a controls remediation plan, a technical accounting memo, or a finance function roadmap. No surprises on scope or cost.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">Do I have to commit to a retainer upfront?</div>
+        <div class="faq-a">No. The 30-day fix engagement stands on its own. Many clients find that after the initial engagement they want ongoing support, at which point a retainer is discussed. But there is no obligation to continue, and the initial engagement is priced and scoped independently.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">How is this different from hiring an accountant or bookkeeper?</div>
+        <div class="faq-a">A bookkeeper records transactions. An accountant prepares tax returns. A fractional CFO owns the financial strategy, the reporting architecture, and the decisions that flow from them. Bonzer Advisory operates at CFO and controller level &mdash; working with your leadership team, your investors, your auditors, and your lenders.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">Is this delivered remotely?</div>
+        <div class="faq-a">Yes. All engagements are delivered remotely as standard. Bonzer Advisory serves clients across North America, Australia, the United Kingdom, and internationally. On-site availability can be arranged for specific engagements where required.</div>
+      </div>
+      <div class="faq-item fade-in">
+        <div class="faq-q">What industries do you work in?</div>
+        <div class="faq-a">Direct experience spans AI and technology, financial services, private equity, mining and resources, energy, media, telecommunications, real estate, and retail. The core disciplines &mdash; reporting, controls, technical accounting, and CFO leadership &mdash; are applicable across industries, and the discovery consultation will confirm fit.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div>
+        <p class="section-tag fade-in">Get in touch</p>
+        <h2 class="section-title fade-in">Begin with a <em>complimentary</em> consultation</h2>
+        <p class="section-sub fade-in">Fill in the form and you will be taken directly to book a time. A 30&ndash;60 minute conversation &mdash; no obligation, no commercial pressure.</p>
+        <div class="contact-info fade-in">
+          <div class="contact-detail">
+            <label>Email</label>
+            <p><a href="mailto:sean@bonzeradvisory.com">sean@bonzeradvisory.com</a></p>
+          </div>
+          <div class="contact-detail">
+            <label>Availability</label>
+            <p>Global &middot; Remote engagements as standard</p>
+          </div>
+          <div class="contact-detail">
+            <label>Response time</label>
+            <p>All enquiries acknowledged within 24 hours</p>
+          </div>
+          <div class="contact-ideal">
+            <p><strong>This consultation is best suited for:</strong></p>
+            <p>Companies with revenue growth, upcoming reporting pressure, audit readiness issues, investor or lender requirements, or a finance leadership gap that needs to be filled before a full-time hire makes sense.</p>
+          </div>
+          <div class="contact-promise">
+            <p>"Good advice begins with understanding the problem &mdash; not presenting a solution. You will leave the conversation with a clearer picture of your situation, regardless of what you decide."</p>
+          </div>
+        </div>
+      </div>
+      <div class="fade-in">
+        <form class="contact-form" name="contact" method="POST" action="https://calendly.com/sean-bonzeradvisory/discovery-consultation" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-row">
+            <div class="form-group"><label>First name</label><input type="text" name="first-name" placeholder="Jane" required></div>
+            <div class="form-group"><label>Last name</label><input type="text" name="last-name" placeholder="Smith" required></div>
+          </div>
+          <div class="form-group"><label>Business email</label><input type="email" name="email" placeholder="jane@company.com" required></div>
+          <div class="form-group"><label>Company name</label><input type="text" name="company" placeholder="Acme Ltd"></div>
+          <div class="form-group">
+            <label>Primary area of interest</label>
+            <select name="service">
+              <option value="">Select a service area</option>
+              <option>Fractional CFO and financial leadership</option>
+              <option>Financial reporting and close transformation</option>
+              <option>Internal controls and finance health review</option>
+              <option>Technical accounting and transaction support</option>
+              <option>Not yet defined - seeking an initial assessment</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Brief overview (optional)</label><textarea name="message" placeholder="A short description of the challenge you are facing or the outcome you are looking to achieve..."></textarea></div>
+          <div class="form-confidential"><strong>Confidentiality:</strong> All enquiries and engagement details are treated with strict professional discretion. Information shared in the discovery consultation and any subsequent engagement is held in confidence as standard practice.</div>
+          <button type="submit" class="btn-submit">Request a consultation &amp; book a call &rarr;</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-logo">Bonzer<span>.</span></div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/company/bonzer-advisory" target="_blank">LinkedIn</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 Bonzer Advisory. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Engagement</a>
+        <a href="confidentiality.html">Confidentiality</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="chat-bubble">
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-avatar">B</div>
+      <div class="chat-header-info">
+        <h4>Bonzer Advisory</h4>
+        <p>Ask a question</p>
+      </div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot"><div class="chat-bubble-msg">Hello &mdash; I can answer questions about Bonzer Advisory, our services, pricing, or whether we might be a good fit for your business. What would you like to know?</div></div>
+    </div>
+    <div class="chat-suggestions" id="suggestions">
+      <button class="chat-suggestion" onclick="quickAsk('What does a fractional CFO do?')">What does a fractional CFO do?</button>
+      <button class="chat-suggestion" onclick="quickAsk('How does pricing work?')">How does pricing work?</button>
+      <button class="chat-suggestion" onclick="quickAsk('Is this right for my business?')">Is this right for me?</button>
+      <button class="chat-suggestion" onclick="quickAsk('What happens in the first 30 days?')">What happens in 30 days?</button>
+    </div>
+    <div class="chat-input-row">
+      <input class="chat-input" id="chatInput" type="text" placeholder="Ask anything..." onkeypress="if(event.key==='Enter')sendChat()">
+      <button class="chat-send" id="chatSendBtn" onclick="sendChat()">Send</button>
+    </div>
+  </div>
+  <button class="chat-btn" onclick="document.getElementById('chatWindow').classList.toggle('open')">
+    <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+  </button>
+</div>
+<script>
+var ch=[],it=false;
+var lf={cfo:"A fractional CFO is a senior finance executive who works part-time or on a project basis. You get CFO-level leadership covering board reporting, cash flow management, KPI frameworks, lender relationships, and strategic financial decisions. At Bonzer Advisory every engagement is handled directly by Sean, a CA ANZ with Big Four and Fortune 1000 experience.",cost:"The 30-day fix engagement starts from USD $5,000, fee agreed in writing after the discovery consultation. No hourly billing. Retainers: Essentials $2,000/month (4-6 hours), Standard $3,500/month (8-12 hours), Premium $5,000/month (15-20 hours). Minimum three-month commitment. The discovery consultation is always complimentary.",fit:"Bonzer Advisory works best with businesses between 10 and 200 employees that have grown past their bookkeeper but are not yet at the scale for a full-time CFO. If your reporting is unreliable, you have an upcoming audit, raise, or board meeting you are not fully prepared for, or your cash flow visibility is poor, this is very likely a good fit.",days:"After the discovery consultation, a scope and fee are agreed in writing. Work begins immediately on one defined problem. At the end of 30 days you receive a documented output such as a rebuilt reporting pack, a controls remediation plan, a technical accounting memo, or a finance function roadmap. No hourly billing, no surprises.",svc:"Bonzer Advisory offers four services. The flagship is fractional CFO and financial leadership. Supporting services: financial reporting and close transformation, internal controls and finance health review, and technical accounting and transaction support. All engagements start with a complimentary discovery consultation.",def:"The most direct next step is a complimentary discovery consultation with Sean. Fill in the contact form and you will be taken straight to the booking calendar. Or email sean@bonzeradvisory.com directly."};
+function glr(t){var i=t.toLowerCase();if(/fractional|cfo/.test(i))return lf.cfo;if(/cost|price|fee|how much|pricing/.test(i))return lf.cost;if(/right|fit|suitable|for me/.test(i))return lf.fit;if(/30 day|first month|how does/.test(i))return lf.days;if(/service|offer|help with/.test(i))return lf.svc;return lf.def;}
+function am(text,type){var m=document.getElementById('chatMessages');var d=document.createElement('div');d.className='chat-msg '+type;d.innerHTML='<div class="chat-bubble-msg">'+text+'</div>';m.appendChild(d);m.scrollTop=m.scrollHeight;}
+function st(){var m=document.getElementById('chatMessages');var d=document.createElement('div');d.className='chat-msg bot chat-typing';d.id='ti';d.innerHTML='<div class="chat-bubble-msg">Typing...</div>';m.appendChild(d);m.scrollTop=m.scrollHeight;}
+function ht(){var t=document.getElementById('ti');if(t)t.remove();}
+function quickAsk(q){document.getElementById('suggestions').style.display='none';scm(q);}
+function sendChat(){var inp=document.getElementById('chatInput');var txt=inp.value.trim();if(!txt||it)return;inp.value='';document.getElementById('suggestions').style.display='none';scm(txt);}
+function scm(text){if(it)return;am(text,'user');ch.push({role:'user',content:text});it=true;document.getElementById('chatSendBtn').disabled=true;st();setTimeout(function(){ht();var r=glr(text);am(r,'bot');ch.push({role:'assistant',content:r});it=false;document.getElementById('chatSendBtn').disabled=false;},800);}
+var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible');});},{threshold:0.08});
+document.querySelectorAll('.fade-in').forEach(function(el){obs.observe(el);});
+</script>
+</body>
+</html>
