@@ -99,17 +99,16 @@ section{padding:100px 5%}
 .who-note p{font-size:14px;color:var(--charcoal-mid);line-height:1.75;font-weight:300}
 #about{background:var(--white)}
 .about-inner{display:grid;grid-template-columns:1fr 1.7fr;gap:80px;align-items:start}
-.about-photo{width:100%;aspect-ratio:3/4;background:var(--charcoal);border:1px solid var(--charcoal-light);display:flex;align-items:center;justify-content:center;margin-bottom:24px}
-.about-initials{font-family:var(--font-display);font-size:80px;font-weight:300;color:var(--green);opacity:0.4}
-.about-name{font-family:var(--font-display);font-size:26px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
+.about-panel{background:var(--off-white);border:1px solid var(--border);border-left:3px solid var(--green);padding:36px 32px;border-radius:2px}
+.about-name{font-family:var(--font-display);font-size:32px;font-weight:400;color:var(--charcoal);margin-bottom:4px}
 .about-title-label{font-size:11px;color:var(--green);letter-spacing:0.08em;font-weight:500;text-transform:uppercase}
-.about-creds{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.about-creds{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .cred-badge{font-size:11px;background:var(--green-pale);color:var(--green);padding:4px 12px;border-radius:2px;letter-spacing:0.06em;font-weight:500}
-.about-video{background:var(--charcoal);border-radius:2px;padding:32px;text-align:center;margin-top:20px;cursor:pointer}
-.play-btn{width:48px;height:48px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
-.play-btn::after{content:'';border-left:17px solid white;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:5px}
-.about-video p{color:rgba(255,255,255,0.35);font-size:11px;margin-bottom:6px;letter-spacing:0.08em;text-transform:uppercase}
-.about-video h4{color:var(--white);font-size:14px;font-weight:400}
+.about-panel-divider{height:1px;background:var(--border);margin:28px 0 24px}
+.about-panel-stat{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.about-panel-stat:last-child{margin-bottom:0}
+.stat-num{font-family:var(--font-display);font-size:34px;font-weight:300;color:var(--green);line-height:1;flex-shrink:0;min-width:48px}
+.stat-label{font-size:13px;color:var(--charcoal-mid);line-height:1.5;font-weight:300}
 .about-right p{font-size:15px;color:var(--charcoal-mid);line-height:1.85;font-weight:300;margin-bottom:18px}
 .about-right strong{color:var(--charcoal);font-weight:500}
 .why-hire{margin-top:36px;border:1px solid var(--border);border-radius:2px;overflow:hidden}
@@ -135,8 +134,10 @@ section{padding:100px 5%}
 .pricing-card.featured{background:var(--charcoal);border-color:var(--charcoal)}
 .pricing-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--green);margin-bottom:10px;font-weight:500;display:block}
 .pricing-card.featured .pricing-label{color:var(--green-mid)}
-.pricing-name{font-family:var(--font-display);font-size:30px;font-weight:300;color:var(--charcoal);margin-bottom:20px}
+.pricing-name{font-family:var(--font-display);font-size:30px;font-weight:300;color:var(--charcoal);margin-bottom:6px}
 .pricing-card.featured .pricing-name{color:var(--white)}
+.pricing-tier{font-size:11px;letter-spacing:0.06em;color:var(--green);font-weight:500;text-transform:uppercase;margin-bottom:18px;line-height:1.4}
+.pricing-card.featured .pricing-tier{color:var(--green-mid)}
 .pricing-price{font-family:var(--font-display);font-size:46px;font-weight:300;color:var(--charcoal);line-height:1;margin-bottom:4px}
 .pricing-card.featured .pricing-price{color:var(--white)}
 .pricing-period{font-size:12px;color:var(--charcoal-mid);margin-bottom:32px}
@@ -256,7 +257,7 @@ footer{background:#181816;padding:32px 5%}
   <div class="hero-inner">
     <div class="fade-in">
       <p class="hero-tag">Fractional CFO &middot; CA ANZ &middot; Big Four &middot; Fortune 1000 &middot; AI Industry</p>
-      <h1 class="hero-title">The finance<br>operator your<br>business <em>needs now.</em></h1>
+      <h1 class="hero-title">The finance<br>leader your<br>business <em>needs now.</em></h1>
       <div class="hero-pain">
         <div class="hero-pain-item">Your month-end takes too long and the numbers still are not reliable</div>
         <div class="hero-pain-item">You are heading into a raise, an audit, or a board meeting and the finance function is not ready</div>
@@ -280,7 +281,7 @@ footer{background:#181816;padding:32px 5%}
       </div>
       <div class="hero-stat" style="margin-top:2px">
         <div class="hero-stat-num">30</div>
-        <div class="hero-stat-label">Days to a defined, documented outcome &mdash; or an ongoing retainer that keeps everything sharp</div>
+        <div class="hero-stat-label">Days to a defined, documented outcome &mdash; or an ongoing advisory partnership that keeps everything sharp</div>
       </div>
       <div class="hero-credentials">
         <span class="cred-item">CA ANZ</span><span class="cred-sep"> &middot; </span>
@@ -305,7 +306,7 @@ footer{background:#181816;padding:32px 5%}
 <section id="proof">
   <div class="container">
     <p class="section-tag fade-in">Track record</p>
-    <h2 class="section-title fade-in">Outcomes delivered in <em>the field</em></h2>
+    <h2 class="section-title fade-in">Real engagements. <em>Real outcomes.</em></h2>
     <p class="section-sub fade-in">The following represent real engagements. Client and employer names are withheld by professional convention.</p>
     <div class="proof-grid">
       <div class="proof-card fade-in">
@@ -334,8 +335,8 @@ footer{background:#181816;padding:32px 5%}
 <section id="process">
   <div class="container">
     <p class="section-tag fade-in">Engagement model</p>
-    <h2 class="section-title fade-in">A structured path to <em>financial clarity</em></h2>
-    <p class="section-sub fade-in">No open-ended retainers before demonstrating value. No ambiguous scope. You know precisely what you are receiving, what it costs, and when it will be done.</p>
+    <h2 class="section-title fade-in">How an engagement <em>actually works</em></h2>
+    <p class="section-sub fade-in">No open-ended commitments before demonstrating value. No ambiguous scope. You know precisely what you are receiving, what it costs, and when it will be done.</p>
     <div class="process-grid">
       <div class="process-step fade-in">
         <div class="step-num">01</div>
@@ -351,7 +352,7 @@ footer{background:#181816;padding:32px 5%}
       </div>
       <div class="process-step fade-in">
         <div class="step-num">03</div>
-        <div class="step-title">Ongoing retainer</div>
+        <div class="step-title">Ongoing advisory partnership</div>
         <div class="step-desc">After the initial engagement, clients may elect to retain ongoing fractional CFO support. Continuous access to senior financial expertise &mdash; reporting oversight, strategic input, and ad hoc advice &mdash; on a predictable monthly basis. Minimum three-month commitment.</div>
         <span class="step-price">From USD $2,000 per month</span>
       </div>
@@ -367,7 +368,7 @@ footer{background:#181816;padding:32px 5%}
       <div>
         <div class="flagship-label">Flagship service</div>
         <div class="flagship-name">Fractional CFO &amp; Financial Leadership</div>
-        <div class="flagship-desc">For businesses that need a senior finance operator in their corner &mdash; attending leadership meetings, owning the numbers, driving decisions &mdash; without the cost or commitment of a full-time hire. Direct, hands-on financial leadership from a CA ANZ with Big Four and Fortune 1000 experience.</div>
+        <div class="flagship-desc">For businesses that need a senior finance leader in their corner &mdash; attending leadership meetings, owning the numbers, driving decisions &mdash; without the cost or commitment of a full-time hire. Direct, hands-on financial leadership from a CA ANZ with Big Four and Fortune 1000 experience.</div>
         <a href="#contact" class="flagship-cta">Book a consultation</a>
       </div>
       <ul class="flagship-list">
@@ -445,23 +446,23 @@ footer{background:#181816;padding:32px 5%}
   <div class="container">
     <div class="about-inner">
       <div class="fade-in">
-        <div class="about-photo"><div class="about-initials">SB</div></div>
-        <div class="about-name">Sean B.</div>
-        <div class="about-title-label">Founder &middot; Bonzer Advisory</div>
-        <div class="about-creds">
-          <span class="cred-badge">CA ANZ</span>
-          <span class="cred-badge">IFRS &amp; US GAAP</span>
-          <span class="cred-badge">Big Four Alumni</span>
-        </div>
-        <div class="about-video">
-          <div class="play-btn"></div>
-          <p>Intro video</p>
-          <h4>What Bonzer Advisory does and who it is for</h4>
+        <div class="about-panel">
+          <div class="about-name">Sean</div>
+          <div class="about-title-label">Founder &middot; Bonzer Advisory</div>
+          <div class="about-creds">
+            <span class="cred-badge">CA ANZ</span>
+            <span class="cred-badge">IFRS &amp; US GAAP</span>
+            <span class="cred-badge">Big Four Alumni</span>
+          </div>
+          <div class="about-panel-divider"></div>
+          <div class="about-panel-stat"><span class="stat-num">10+</span><span class="stat-label">Years of senior finance leadership</span></div>
+          <div class="about-panel-stat"><span class="stat-num">3</span><span class="stat-label">Continents delivered across</span></div>
+          <div class="about-panel-stat"><span class="stat-num">4</span><span class="stat-label">Accounting frameworks &mdash; IFRS, US GAAP, AASB, UK GAAP</span></div>
         </div>
       </div>
       <div class="fade-in">
         <p class="section-tag">About</p>
-        <h2 class="section-title">A <em>senior finance executive</em> &mdash; directly engaged.</h2>
+        <h2 class="section-title">Senior finance leadership, <em>directly engaged</em>.</h2>
         <p>Bonzer Advisory was founded on a straightforward premise: growing businesses deserve access to the same calibre of financial expertise as the large corporates they compete with &mdash; without a full-time executive overhead.</p>
         <p>The practice is led by a <strong>senior finance executive and Chartered Accountant (CA ANZ)</strong> with Big Four foundations and over a decade of progressive leadership across major financial institutions, Fortune 1000 environments, and &mdash; most recently &mdash; two of the world's most prominent AI companies during their most critical growth phases. Experience spans <strong>IFRS, US GAAP, AASB, and UK GAAP</strong> across APAC, EMEA, and the Americas.</p>
         <p>Prior engagements include senior finance leadership at a <strong>leading AI research organisation</strong> and a <strong>major AI infrastructure company</strong>; finance transformation and close optimisation at a <strong>major global financial data and media group</strong>; and portfolio-wide financial monitoring for a <strong>US private equity manager</strong> across 20+ companies. Earlier career experience spans Big Four audit across Sydney and London for ASX and FTSE-listed clients, and group reporting at a major Australian bank.</p>
@@ -516,7 +517,7 @@ footer{background:#181816;padding:32px 5%}
   <div class="container">
     <p class="section-tag fade-in">Pricing</p>
     <h2 class="section-title fade-in">Transparent structure, <em>no ambiguity</em></h2>
-    <p class="section-sub fade-in">Retainer pricing is set and disclosed upfront. The initial fix engagement is scoped individually &mdash; a written proposal with the agreed fee is provided before any work begins.</p>
+    <p class="section-sub fade-in">Partnership pricing is set and disclosed upfront. The initial fix engagement is scoped individually &mdash; a written proposal with the agreed fee is provided before any work begins.</p>
     <div class="pricing-fix fade-in">
       <div class="pricing-fix-info">
         <h4>The 30-day fix engagement</h4>
@@ -529,8 +530,9 @@ footer{background:#181816;padding:32px 5%}
     </div>
     <div class="pricing-grid">
       <div class="pricing-card fade-in">
-        <span class="pricing-label">Monthly retainer</span>
+        <span class="pricing-label">Advisory partnership</span>
         <div class="pricing-name">Essentials</div>
+        <div class="pricing-tier">Controller-level oversight &middot; financial hygiene</div>
         <div class="pricing-price">$2,000</div>
         <div class="pricing-period">USD per month &middot; minimum 3 months</div>
         <ul class="pricing-features">
@@ -544,6 +546,7 @@ footer{background:#181816;padding:32px 5%}
       <div class="pricing-card featured fade-in">
         <span class="pricing-label">Most selected</span>
         <div class="pricing-name">Standard</div>
+        <div class="pricing-tier">Finance Director-level &middot; commercial input &amp; strategic reporting</div>
         <div class="pricing-price">$3,500</div>
         <div class="pricing-period">USD per month &middot; minimum 3 months</div>
         <ul class="pricing-features">
@@ -556,8 +559,9 @@ footer{background:#181816;padding:32px 5%}
         <a href="#contact" class="btn-pricing btn-pricing-inv">Enquire</a>
       </div>
       <div class="pricing-card fade-in">
-        <span class="pricing-label">Monthly retainer</span>
+        <span class="pricing-label">Advisory partnership</span>
         <div class="pricing-name">Premium</div>
+        <div class="pricing-tier">CFO-level leadership &middot; fundraising, lender &amp; board support</div>
         <div class="pricing-price">$5,000</div>
         <div class="pricing-period">USD per month &middot; minimum 3 months</div>
         <ul class="pricing-features">
@@ -586,8 +590,8 @@ footer{background:#181816;padding:32px 5%}
         <div class="faq-a">Following the discovery consultation, a scope and fee are agreed in writing. Work begins immediately on one clearly defined problem. A documented output is delivered at the end of 30 days &mdash; whether that is a rebuilt reporting pack, a controls remediation plan, a technical accounting memo, or a finance function roadmap. No surprises on scope or cost.</div>
       </div>
       <div class="faq-item fade-in">
-        <div class="faq-q">Do I have to commit to a retainer upfront?</div>
-        <div class="faq-a">No. The 30-day fix engagement stands on its own. Many clients find that after the initial engagement they want ongoing support, at which point a retainer is discussed. But there is no obligation to continue, and the initial engagement is priced and scoped independently.</div>
+        <div class="faq-q">Do I have to commit to an ongoing partnership upfront?</div>
+        <div class="faq-a">No. The 30-day fix engagement stands on its own. Many clients find that after the initial engagement they want ongoing support, at which point an advisory partnership is discussed. But there is no obligation to continue, and the initial engagement is priced and scoped independently.</div>
       </div>
       <div class="faq-item fade-in">
         <div class="faq-q">How is this different from hiring an accountant or bookkeeper?</div>
@@ -709,7 +713,7 @@ footer{background:#181816;padding:32px 5%}
 </div>
 <script>
 var ch=[],it=false;
-var lf={cfo:"A fractional CFO is a senior finance executive who works part-time or on a project basis. You get CFO-level leadership covering board reporting, cash flow management, KPI frameworks, lender relationships, and strategic financial decisions. At Bonzer Advisory every engagement is handled directly by Sean, a CA ANZ with Big Four and Fortune 1000 experience.",cost:"The 30-day fix engagement starts from USD $5,000, fee agreed in writing after the discovery consultation. No hourly billing. Retainers: Essentials $2,000/month (4-6 hours), Standard $3,500/month (8-12 hours), Premium $5,000/month (15-20 hours). Minimum three-month commitment. The discovery consultation is always complimentary.",fit:"Bonzer Advisory works best with businesses between 10 and 200 employees that have grown past their bookkeeper but are not yet at the scale for a full-time CFO. If your reporting is unreliable, you have an upcoming audit, raise, or board meeting you are not fully prepared for, or your cash flow visibility is poor, this is very likely a good fit.",days:"After the discovery consultation, a scope and fee are agreed in writing. Work begins immediately on one defined problem. At the end of 30 days you receive a documented output such as a rebuilt reporting pack, a controls remediation plan, a technical accounting memo, or a finance function roadmap. No hourly billing, no surprises.",svc:"Bonzer Advisory offers four services. The flagship is fractional CFO and financial leadership. Supporting services: financial reporting and close transformation, internal controls and finance health review, and technical accounting and transaction support. All engagements start with a complimentary discovery consultation.",def:"The most direct next step is a complimentary discovery consultation with Sean. Fill in the contact form and you will be taken straight to the booking calendar. Or email sean@bonzeradvisory.com directly."};
+var lf={cfo:"A fractional CFO is a senior finance executive who works part-time or on a project basis. You get CFO-level leadership covering board reporting, cash flow management, KPI frameworks, lender relationships, and strategic financial decisions. At Bonzer Advisory every engagement is handled directly by Sean, a CA ANZ with Big Four and Fortune 1000 experience.",cost:"The 30-day fix engagement starts from USD $5,000, fee agreed in writing after the discovery consultation. No hourly billing. Ongoing advisory partnerships: Essentials $2,000/month (4-6 hours), Standard $3,500/month (8-12 hours), Premium $5,000/month (15-20 hours). Minimum three-month commitment. The discovery consultation is always complimentary.",fit:"Bonzer Advisory works best with businesses between 10 and 200 employees that have grown past their bookkeeper but are not yet at the scale for a full-time CFO. If your reporting is unreliable, you have an upcoming audit, raise, or board meeting you are not fully prepared for, or your cash flow visibility is poor, this is very likely a good fit.",days:"After the discovery consultation, a scope and fee are agreed in writing. Work begins immediately on one defined problem. At the end of 30 days you receive a documented output such as a rebuilt reporting pack, a controls remediation plan, a technical accounting memo, or a finance function roadmap. No hourly billing, no surprises.",svc:"Bonzer Advisory offers four services. The flagship is fractional CFO and financial leadership. Supporting services: financial reporting and close transformation, internal controls and finance health review, and technical accounting and transaction support. All engagements start with a complimentary discovery consultation.",def:"The most direct next step is a complimentary discovery consultation with Sean. Fill in the contact form and you will be taken straight to the booking calendar. Or email sean@bonzeradvisory.com directly."};
 function glr(t){var i=t.toLowerCase();if(/fractional|cfo/.test(i))return lf.cfo;if(/cost|price|fee|how much|pricing/.test(i))return lf.cost;if(/right|fit|suitable|for me/.test(i))return lf.fit;if(/30 day|first month|how does/.test(i))return lf.days;if(/service|offer|help with/.test(i))return lf.svc;return lf.def;}
 function am(text,type){var m=document.getElementById('chatMessages');var d=document.createElement('div');d.className='chat-msg '+type;d.innerHTML='<div class="chat-bubble-msg">'+text+'</div>';m.appendChild(d);m.scrollTop=m.scrollHeight;}
 function st(){var m=document.getElementById('chatMessages');var d=document.createElement('div');d.className='chat-msg bot chat-typing';d.id='ti';d.innerHTML='<div class="chat-bubble-msg">Typing...</div>';m.appendChild(d);m.scrollTop=m.scrollHeight;}
