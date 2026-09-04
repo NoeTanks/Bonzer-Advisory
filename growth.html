@@ -239,7 +239,7 @@ footer { padding: 34px 0; color: rgba(255,255,255,.58); background: var(--charco
       <aside class="growth-map" aria-label="Example growth economics map">
         <p class="map-label">The Bonzer growth economics map</p>
         <div class="map-flow">
-          <div class="map-step"><span class="map-icon">1</span><span class="map-title">Marketing investment</span><span class="map-value">$3,000</span></div>
+          <div class="map-step"><span class="map-icon">1</span><span class="map-title">Marketing investment (USD)</span><span class="map-value">$3,000</span></div>
           <div class="map-step"><span class="map-icon">2</span><span class="map-title">Qualified enquiries</span><span class="map-value">41</span></div>
           <div class="map-step"><span class="map-icon">3</span><span class="map-title">Booked jobs</span><span class="map-value">23</span></div>
           <div class="map-step"><span class="map-icon">4</span><span class="map-title">Attributed revenue</span><span class="map-value">$31,800</span></div>
@@ -268,11 +268,11 @@ footer { padding: 34px 0; color: rgba(255,255,255,.58); background: var(--charco
         <div class="calc-inputs">
           <h3>Your service economics</h3>
           <div class="field-grid">
-            <div class="field"><label for="jobValue">Average job revenue</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="jobValue" type="number" min="0" step="100" value="3000"></div></div>
+            <div class="field"><label for="jobValue">Average job revenue (USD)</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="jobValue" type="number" min="0" step="100" value="3000"></div></div>
             <div class="field"><label for="grossMargin">Gross margin</label><div class="input-wrap"><input class="with-suffix" id="grossMargin" type="number" min="0" max="100" step="1" value="45"><span class="suffix">%</span></div></div>
             <div class="field"><label for="closeRate">Qualified lead-to-job rate</label><div class="input-wrap"><input class="with-suffix" id="closeRate" type="number" min="1" max="100" step="1" value="30"><span class="suffix">%</span></div></div>
-            <div class="field"><label for="costPerLead">Expected cost per lead</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="costPerLead" type="number" min="1" step="10" value="150"></div></div>
-            <div class="field"><label for="monthlyBudget">Monthly advertising budget</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="monthlyBudget" type="number" min="0" step="250" value="3000"></div></div>
+            <div class="field"><label for="costPerLead">Expected cost per lead (USD)</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="costPerLead" type="number" min="1" step="10" value="150"></div></div>
+            <div class="field"><label for="monthlyBudget">Monthly advertising budget (USD)</label><div class="input-wrap"><span class="prefix">$</span><input class="with-prefix" id="monthlyBudget" type="number" min="0" step="250" value="3000"></div></div>
             <div class="field"><label for="targetReturn">Required GP return</label><div class="input-wrap"><input class="with-suffix" id="targetReturn" type="number" min="1" step="0.25" value="2"><span class="suffix">×</span></div></div>
           </div>
         </div>
@@ -308,7 +308,7 @@ footer { padding: 34px 0; color: rgba(255,255,255,.58); background: var(--charco
             <li>Have a service with healthy gross profit</li>
             <li>Can handle additional qualified work</li>
             <li>Can track an enquiry through to a completed job</li>
-            <li>Can invest at least $1,500 a month in media</li>
+            <li>Can invest at least $1,500 USD a month in media</li>
           </ul>
         </article>
         <article class="fit-card caution">
@@ -389,11 +389,11 @@ footer { padding: 34px 0; color: rgba(255,255,255,.58); background: var(--charco
       </div>
       <aside class="price-panel">
         <span class="price-kicker">90-day Bonzer fee</span>
-        <strong class="price-total">$6,250</strong>
-        <span class="price-caption">CAD · advertising spend paid separately</span>
+        <strong class="price-total">$5,000</strong>
+        <span class="price-caption">USD · advertising spend paid separately</span>
         <div class="price-breakdown">
-          <div class="price-row"><span>Setup and installation</span><span>$2,500</span></div>
-          <div class="price-row"><span>Management</span><span>$1,250 × 3 months</span></div>
+          <div class="price-row"><span>Setup and installation</span><span>$2,000</span></div>
+          <div class="price-row"><span>Management</span><span>$1,000 × 3 months</span></div>
         </div>
         <a class="btn btn-primary" href="https://calendly.com/sean-bonzeradvisory/discovery-consultation" target="_blank" rel="noopener">Discuss a founding pilot</a>
       </aside>
@@ -431,7 +431,7 @@ footer { padding: 34px 0; color: rgba(255,255,255,.58); background: var(--charco
 
 <script>
 const ids = ['jobValue', 'grossMargin', 'closeRate', 'costPerLead', 'monthlyBudget', 'targetReturn'];
-const money = new Intl.NumberFormat('en-CA', { style: 'currency', currency: 'CAD', maximumFractionDigits: 0 });
+const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
 const number = id => Math.max(0, Number(document.getElementById(id).value) || 0);
 
 function updateCalculator() {
