@@ -12,9 +12,7 @@
 <meta property="og:url" content="https://bonzeradvisory.com/">
 <meta property="og:title" content="Fractional CFO for Growing Businesses | Bonzer Advisory">
 <meta property="og:description" content="Senior finance leadership for growing businesses. Clarity on cash flow, profit you can see, decisions made with confidence.">
-<meta property="og:image" content="https://bonzeradvisory.com/assets/og-image.jpg">
-
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Fractional CFO for Growing Businesses | Bonzer Advisory">
 <meta name="twitter:description" content="Senior finance leadership for growing businesses. Clarity on cash flow, profit you can see, decisions made with confidence.">
 
@@ -28,7 +26,6 @@
   "@type": "ProfessionalService",
   "name": "Bonzer Advisory",
   "url": "https://bonzeradvisory.com",
-  "logo": "https://bonzeradvisory.com/assets/logo.png",
   "description": "Senior finance leadership for growing businesses. Fractional CFO services for businesses between $1M and $20M revenue.",
   "founder": {
     "@type": "Person",
@@ -164,6 +161,28 @@ h2 em { font-style: italic; color: var(--green); font-weight: 400; }
 .service-list li { font-size: 14px; color: var(--charcoal); padding: 8px 0; padding-left: 20px; position: relative; line-height: 1.5; }
 .service-list li:before { content: "·"; position: absolute; left: 4px; color: var(--green); font-weight: 700; font-size: 18px; top: 4px; }
 
+/* Bonzer Growth */
+#growth { background: var(--white); padding-top: 96px; padding-bottom: 96px; }
+.growth-preview { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; padding: 56px; background: var(--charcoal); border-radius: 18px; color: white; box-shadow: 0 18px 60px rgba(44,44,42,0.12); }
+.growth-preview h2 { color: white; margin-bottom: 20px; }
+.growth-preview h2 em { color: var(--green-light); }
+.growth-preview-copy { color: rgba(255,255,255,0.66); font-size: 17px; max-width: 620px; margin-bottom: 28px; }
+.growth-preview-list { display: grid; gap: 11px; list-style: none; margin-bottom: 32px; }
+.growth-preview-list li { position: relative; padding-left: 24px; color: rgba(255,255,255,0.84); font-size: 14px; }
+.growth-preview-list li:before { content: "✓"; position: absolute; left: 0; color: var(--green-light); font-weight: 700; }
+.growth-preview-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.growth-preview .btn-outline { color: white; border-color: rgba(255,255,255,0.55); }
+.growth-preview .btn-outline:hover { background: white; color: var(--charcoal); }
+.growth-proof { padding: 30px; border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; background: rgba(255,255,255,0.04); }
+.growth-proof-label { color: rgba(255,255,255,0.5); font-size: 11px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; }
+.growth-proof-row { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.09); font-size: 13px; }
+.growth-proof-row strong { color: white; font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+.growth-proof-result { padding-top: 24px; }
+.growth-proof-result strong { display: block; color: var(--green-light); font-family: var(--font-display); font-size: 43px; font-weight: 400; line-height: 1; }
+.growth-proof-result span { display: block; color: rgba(255,255,255,0.58); font-size: 12px; margin-top: 8px; }
+@media (max-width: 900px) { .growth-preview { grid-template-columns: 1fr; padding: 40px; gap: 40px; } }
+@media (max-width: 560px) { .growth-preview { padding: 28px; } }
+
 /* Who It's For */
 #fit { background: var(--white); }
 .fit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
@@ -268,6 +287,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 80p
     <a href="#" class="logo">BONZER<span class="dot">.</span><span class="label">ADVISORY</span></a>
     <div class="nav-links" id="navLinks">
       <a href="#services">Services</a>
+      <a href="growth.html">Growth</a>
       <a href="#process">Process</a>
       <a href="#about">About</a>
       <a href="#pricing">Pricing</a>
@@ -460,6 +480,35 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 80p
   </div>
 </section>
 
+<!-- BONZER GROWTH -->
+<section id="growth">
+  <div class="container">
+    <div class="growth-preview fade-in">
+      <div>
+        <p class="section-tag" style="color: var(--green-light);">New · Bonzer Growth</p>
+        <h2>Know which customers are worth buying <em>before you spend.</em></h2>
+        <p class="growth-preview-copy">Bonzer Growth helps established service businesses identify one high-value service to grow, build a measurable acquisition path, and connect marketing spend to booked jobs, revenue and gross profit.</p>
+        <ul class="growth-preview-list">
+          <li>Start with margin, demand and available capacity</li>
+          <li>Build one focused landing page and search campaign</li>
+          <li>Make a clear scale, fix or stop decision after 90 days</li>
+        </ul>
+        <div class="growth-preview-actions">
+          <a href="growth.html" class="btn btn-primary">Explore Bonzer Growth</a>
+          <a href="growth.html#calculator" class="btn btn-outline">Test your economics</a>
+        </div>
+      </div>
+      <aside class="growth-proof" aria-label="Example campaign economics">
+        <span class="growth-proof-label">Example commercial view · USD</span>
+        <div class="growth-proof-row"><span>Marketing investment</span><strong>$3,000</strong></div>
+        <div class="growth-proof-row"><span>Booked jobs</span><strong>23</strong></div>
+        <div class="growth-proof-row"><span>Attributed gross profit</span><strong>$13,400</strong></div>
+        <div class="growth-proof-result"><strong>4.47×</strong><span>Gross-profit return on marketing spend</span></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
 <!-- WHO IT'S FOR -->
 <section id="fit">
   <div class="container">
@@ -646,6 +695,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.6); padding: 80p
       <div class="footer-col">
         <h4>Quick links</h4>
         <a href="#services">Services</a>
+        <a href="growth.html">Bonzer Growth</a>
         <a href="#process">Process</a>
         <a href="#about">About Sean</a>
         <a href="#pricing">Pricing</a>
